@@ -12,13 +12,240 @@
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>Webify</title>
+    <title>SampleWebsite</title>
 </head>
+
 <body>
-    <div class="container">
+ <nav class="navbar navbar-dark navbar-expand-sm bg--primary fixed-top">
+     <div class="container">
+        <a class="navbar-brand mr-auto" href="#">WEBSITE NAME</a>
+            
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+         </ul>
+     </div>
+     <button class="navbar-toggler" type="button" data-toggle ="collapse" data-target="#Navbar">
+         <span class="navbar-toggler-icon"></span>
         
+     </button>
+     
+ </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Your Website Name</h1>
+                    <h2>Tagline</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----Products Section----->
+    <div class="container">
+        <div class="row row-content align-items-center">
+            
+                
+            <div class="col-12">
+                <h3 class="bigheading" >Your Best Sellers</h3>
+                <div class="card-deck">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/download (1).jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Product Name</h5>
+                  <p class="card-text">Some quick description</p>
+                  <a href="#" class="btn btn-primary">price</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/download (2).jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Product Name</h5>
+                  <p class="card-text">Some quick description</p>
+                  <a href="#" class="btn btn-primary">price</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/download.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Product Name</h5>
+                  <p class="card-text">Some quick descriptiom</p>
+                  <a href="#" class="btn btn-primary">Price</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/images.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Product Name</h5>
+                  <p class="card-text">Some quick description</p>
+                  <a href="#" class="btn btn-primary">Price </a>
+                </div>
+              </div>
+</div></div>
+        
+        <!------Reviews Section-->
+
+       <div class="row row-content">
+
+            <div id="reviews" class="carousel slide" data-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active container-fluid">
+                  <h2 class="bigheading">Reviews</h2>
+                  <h3 class="heading"></h3>
+                  <img class="testimonial-image" src="images/download (1).jpg" alt="pots">
+                </div>
+                <div class="carousel-item container-fluid">
+                  <h2 class="heading">Reviews</h2>
+                  <img class="testimonial-image" src="images/download (2).jpg" alt="glass bottles">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#displaying-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#displaying-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+<!----Contact Section---->
+<section id="contact">
+<div class="container">
+    
+           <h3 class="bigheading">Contact Us</h3>
+           
+    
+
+    <div class="row row-content">
+       <div class="col-12">
+          <h3>Location Information</h3>
+       </div>
+        <div class="col-12 col-sm-4 offset-sm-1">
+               <h5>Our Address</h5>
+                <address style="font-size: 100%">
+                  Your Shop Address<br>
+                  <i class="fa fa-phone"></i>: Your Phone Number<br>
+                    <a href="#">Your Email</a>
+               </address>
+        </div>
+       
+        <div class="col-12 col-sm-11 offset-sm-1">
+            <div class="btn-group" role="group">
+                <a role="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call</a>
+                <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                <a role="button" class="btn btn-success" href="#"><i class="fa fa-envelope-o"></i> Email</a>
+            </div>
+        </div>
     </div>
-</footer>
+
+    <div class="row row-content">
+       <div class="col-12">
+          <h3>Send us your Feedback</h3>
+       </div>
+        <div class="col-12 col-md-9">
+            <form>
+                <div class="form-group row">
+                    <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                    </div>
+                    <div class="col-7 col-md-7">
+                        <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6 offset-md-2">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                            <label class="form-check-label" for="approve">
+                                <strong>May we contact you?</strong>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                        <select class="form-control">
+                            <option>Tel.</option>
+                            <option>Email</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-2 col-md-10">
+                        <button type="submit" class="btn btn-primary">Send Feedback</button>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+         <div class="col-12 col-md">
+        </div>
+   </div>
+</section>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Buyer</a></li>
+                        <li><a href="#">Seller</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                      <i class="fa fa-envelope fa-lg"></i>: 
+                      
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+">Google</a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id=">Facebook</a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/">Linkedin</a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">Twitter</a>
+                       
+                   
+                    </div>
+
+                </div>
+           </div>
+           <div class="row justify-content-center" >             
+                <div class="col-auto">
+                    <p>© Copyright</p>
+                </div>
+           </div>
+        </div>
+    </footer>
 <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
